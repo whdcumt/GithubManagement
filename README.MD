@@ -7,7 +7,18 @@
 #代码管理
 ##C语言
 ###知识点
+[1]#pragma pack(push,2) /#pragma pack() 字节的对齐
+[参考博客1](http://www.cnblogs.com/King-Gentleman/p/5297355.html)
+[参考博客2](http://blog.chinaunix.net/uid-25445243-id-2354324.html)<br>
+[2]**结构体定义**:将typedef struct tagBITMAPINFOHEADER中的tagBITMAPINFOHEADER 删掉,运行结果不受影响<br>
+[3]**打开文件**:打开一个文件fopen().<br>
+[4]**读取文件**:根据文件的存储格式读取里面的内容fread().<br>
+[5]**BMP图像读取**:写入文件:综合BMP图像的结构,和知识点4和5,可以实现图像数据的读取.<br>
+[7]**写入文件**将图像处理完后得到的bmp图像写入图像变量保存起来.fwrite()函数的使用<br>
+[8]**综合知识点**:读取一个BMP格式的图片,然后经过纯高斯模糊生成模糊图像.(计算高斯系数,然后分通道进行高斯模糊)<br>
+[相关工程](https://github.com/whdcumt/PureGaussianBlur)
 ###错误处理
+[1][已经包含了头文件,编译程序却还出现如:对"ceil"未定义的引用/ceil()为头文件中的函数](http://blog.csdn.net/fightingforcv/article/details/52414273)<br>
 ##C++语言
 ###知识点
 ###错误处理
@@ -15,3 +26,5 @@
 ###知识点
 ###错误处理
 #工程管理
+#算法学习
+[1][C语言实现纯的高斯模糊图像处理](https://github.com/whdcumt/PureGaussianBlur)
